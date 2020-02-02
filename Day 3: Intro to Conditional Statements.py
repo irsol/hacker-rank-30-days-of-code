@@ -1,11 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
 # Task
 # Given an integer,n, perform the following conditional actions:
 
