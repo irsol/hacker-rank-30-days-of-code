@@ -15,7 +15,7 @@ Output Format
 Print 10 lines of output; each line i(where 1 <= i < 10) contains the result of n x i in the form:
 n x i = result.
 """
-n = 1
+n = int(input())
 for i in range(1, 11):
   result = n * i
   print("{} x {} = {}".format(n, i, result))
