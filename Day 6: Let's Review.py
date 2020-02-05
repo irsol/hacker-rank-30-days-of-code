@@ -8,4 +8,16 @@ Note: 0 is considered to be an even index.
 """
 
 
+N = int(input())
 
+for i in range(0, N):
+  s = input()
+
+  for k in range(0, len(s)):
+    if k % 2 == 0:
+      print(s[k], end="")
+  print(" ", end="")
+  for k in range(0, len(s)):
+    if k % 2 != 0:   
+      print(s[k], end="")
+  print(" ")
