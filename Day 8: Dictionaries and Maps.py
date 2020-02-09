@@ -9,15 +9,23 @@ Note: Your phone book should be a Dictionary/Map/HashMap data structure.
 """
 
 n = int(input())
-phoneBook = dict()
+phoneBook = {}
 
+# Fill a phonebook
 for i in range(0, n):
-  name, number = input().split()
+  entry = str(input()).split(" ")
+  name = entry[0]
+  number = entry[1]  
   phoneBook[name] = number
-
-for j in range(0, n):
-  name = input()
-  if name in phoneBook:
-      print("{}={}".format(name, phoneBook[name]))
-  else:
-      print("Not found")
+  
+# Use while loop because don't know how many name entries will be
+while True:
+    try:
+        name = input()
+    except:
+        break
+    if name in phoneBook:
+        number = phoneBook[name]
+        print(name + "=" + number)
+    else:
+        print("Not found")
